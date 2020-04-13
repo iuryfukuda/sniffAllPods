@@ -8,7 +8,7 @@ static-tcpdump:
 	rm ksniff.zip
 
 run: clean static-tcpdump
-	./main.sh -f static-tcpdump -a "$(args)"
+	./sniff.sh -f static-tcpdump -a "$(args)"
 
 clean:
 	rm -f *.log *.err *.pid
