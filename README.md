@@ -11,9 +11,9 @@ Run the tcpdump with givenned args and log all
 ## Log files
 
 For each pod it will generate:
-- {pod}.log: give the mainly log with tcpdump capture
-- {pod}.pid: pid of the capture process
-- {pod}.err: stderr output
+- `{pod-name}.log`: give the mainly log with tcpdump capture
+- `{pod-name}.pid`: pid of the capture process
+- `{pod-name}.err`: stderr output
 
 ## Usage
 
