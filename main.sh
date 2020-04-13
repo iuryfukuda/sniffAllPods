@@ -38,7 +38,7 @@ TCPDUMP_ARGS=${args:-$DEFAULT_TCPDUMP_ARGS}
 logp() {
     pod=$1
     msg=$2
-    echo $pod[$(date +%d-%m-%Y_%H-%M-%S)]: $msg
+    echo [$(date +%d-%m-%Y_%H:%M:%S)]$pod: $msg
 }
 
 all_pods=$(kubectl get pods | awk '{ print $1 }' | grep -v '^NAME$')
